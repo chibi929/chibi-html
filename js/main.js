@@ -2,9 +2,9 @@ $(function() {
   var timer;
   $("#button").on("click", function() {
     clearTimeout(timer);
-    $("#balloon-tips").show();
+    $("#balloon-tips").toggleClass("visible");
     timer = setTimeout(function() {
-      $("#balloon-tips").hide();
+      $("#balloon-tips").toggleClass("visible");
     }, 3000);
   });
 });
