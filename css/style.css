@@ -2,28 +2,40 @@
     margin-top: 15px;
 }
 
+.fadein {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
+
+.fadein.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
 .balloon-left {
- 	  position: absolute;
-	  display: inline-block;
+    position: absolute;
+    display: inline-block;
     margin-left: 20px;
-	  padding: 7px 10px;
+    padding: 7px 10px;
     min-height: 40px;
-	  min-width: 120px;
+    min-width: 120px;
     line-height: 40px;
-	  background: #5cc507;
+    background: #5cc507;
+    box-shadow: -4px 4px 8px -1px #999999;
 }
 
 .balloon-left:before{
-	  content: "";
-	  position: absolute;
-	  top: 50%;
-	  left: -30px;
- 	  margin-top: -15px;
-	  border: 15px solid transparent;
-	  border-right: 15px solid #5cc507;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 15px solid #5cc507;
 }
 
 .balloon-left p {
-	  margin: 0;
-	  padding: 0;
+    margin: 0;
+    padding: 0;
 }
