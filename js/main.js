@@ -1,10 +1,10 @@
 $(function() {
-  var timer;
   $("#button").on("click", function() {
-    clearTimeout(timer);
-    $("#balloon-tips").toggleClass("visible");
-    timer = setTimeout(function() {
-      $("#balloon-tips").toggleClass("visible");
-    }, 3000);
+    $("#balloon-tips")
+      .toggleClass("visible")
+      .delay(3000)
+      .queue(function() {
+        $("#balloon-tips").removeClass('visible').dequeue();
+      });
   });
 });
