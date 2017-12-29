@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Example</title>
+  </head>
+  <body onLoad="onLoad()">
+    <input id="inputFile"
+           type="file"
+           accept="image/jpeg,image/png,image/gif,image/bmp,image/x-icon"
+           onchange="onFileChanged(event)">
+    <img id="sourceImage" style="display:none">
+    <p id="debug">x1: 0, y1: 0, x2: 0, y2: 0</p>
+
+    <div>
+      <canvas id="mainCanvas"
+              onmousedown="onMouseDown(event)"
+              onmousemove="onMouseMove(event)"
+              onmouseup="onMouseUp(event)"
+              style="border: 1px solid #f00"></canvas>
+    </div>
+    <button onclick="onSubmit()">SUBMIT</button>
+
+    <script src="main.js"></script>
+  </body>
+</html>
