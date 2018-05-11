@@ -6,6 +6,7 @@ var flipper = null;
 var flipProcessing = false;
 
 function onLoad() {
+  data.shuffle();
   front = document.getElementById('front');
   back = document.getElementById('back');
   flipper = document.getElementById('flipper');
