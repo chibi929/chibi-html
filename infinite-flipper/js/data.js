@@ -1,47 +1,92 @@
 var data = [
   {
-    title: 'タイトル1',
-    description: '説明',
-    image: 'img/test.jpg'
+    title: 'りんご(あか)',
+    description: 'Apple (Red)',
+    image: 'img/apple.png'
   },
   {
-    title: 'タイトル2',
-    description: '説明',
-    image: 'img/test.jpg'
+    title: 'りんご(あお)',
+    description: 'Apple (Blue)',
+    image: 'img/apple2.png'
   },
   {
-    title: 'タイトル3',
-    description: '説明',
-    image: 'img/test.jpg'
+    title: 'ばなな',
+    description: 'Banana',
+    image: 'img/banana.png'
   },
   {
-    title: 'タイトル4',
-    description: '説明',
-    image: 'img/test.jpg'
+    title: 'ぶるーべりー',
+    description: 'Blue Berry',
+    image: 'img/blue-berry.png'
   },
   {
-    title: 'タイトル5',
-    description: '説明',
-    image: 'img/test.jpg'
+    title: 'ぶどう',
+    description: 'Grape',
+    image: 'img/grape.png'
   },
   {
-    title: 'タイトル6',
-    description: '説明',
-    image: 'img/test.jpg'
+    title: 'きういふるーつ',
+    description: 'Kiwi fruit',
+    image: 'img/kiwi.png'
   },
   {
-    title: 'タイトル7',
-    description: '説明',
-    image: 'img/test.jpg'
+    title: 'れもん',
+    description: 'Lemon',
+    image: 'img/lemon.png'
   },
   {
-    title: 'タイトル8',
-    description: '説明',
-    image: 'img/test.jpg'
+    title: 'まんごー',
+    description: 'Mango',
+    image: 'img/mango.png'
   },
   {
-    title: 'タイトル9',
-    description: '説明',
-    image: 'img/test.jpg'
+    title: 'めろん',
+    description: 'Meron',
+    image: 'img/melon.png'
+  },
+  {
+    title: 'ますかっと',
+    description: 'Muscat',
+    image: 'img/muscat.png'
+  },
+  {
+    title: 'みかん',
+    description: 'Orange',
+    image: 'img/orange.png'
+  },
+  {
+    title: 'もも',
+    description: 'Peach',
+    image: 'img/peach.png'
+  },
+  {
+    title: 'なし',
+    description: 'Pear',
+    image: 'img/pear.png'
+  },
+  {
+    title: 'ようなし',
+    description: 'Pear',
+    image: 'img/pear2.png'
+  },
+  {
+    title: 'かき',
+    description: 'Persimmon',
+    image: 'img/persimmon.png'
+  },
+  {
+    title: 'ぱいなっぷる',
+    description: 'Pineapple',
+    image: 'img/pineapple.png'
+  },
+  {
+    title: 'いちご',
+    description: 'Strawberry',
+    image: 'img/strawberry.png'
+  },
+  {
+    title: 'すいか',
+    description: 'Water Melon',
+    image: 'img/watermelon.png'
   }
 ];

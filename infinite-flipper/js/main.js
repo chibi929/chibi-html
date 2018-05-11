@@ -28,16 +28,17 @@ function onFlipperClicked() {
   }
   flipProcessing = true;
 
-  rotateY += 180;
+  // 2回転
+  rotateY += 180 + 360;
   flipper.style.transform = `rotateY(${rotateY}deg)`;
   flipper.style.webkitTransform = `rotateY(${rotateY}deg)`;
   flipper.style.mozTransform = `rotateY(${rotateY}deg)`;
 }
 
 function _setData(elem, obj) {
-  elem.children[0].style.src = obj.image;
+  elem.children[0].src = obj.image;
   elem.children[1].innerHTML = obj.title;
-  elem.children[2].description = obj.description;
+  elem.children[2].innerHTML = obj.description;
 }
 
 function _getNextData() {
