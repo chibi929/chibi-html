@@ -27,7 +27,7 @@ function onFlipperClicked() {
     return;
   }
   flipProcessing = true;
-  
+
   rotateY += 180;
   flipper.style.transform = `rotateY(${rotateY}deg)`;
   flipper.style.webkitTransform = `rotateY(${rotateY}deg)`;
