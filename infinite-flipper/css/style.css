@@ -50,13 +50,13 @@ html, body {
   height: 100%;
 }
 
-.front {
+#front {
   -webkit-transform: rotateY(0deg);
   -moz-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
 
-.back {
+#back {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   transform: rotateY(180deg);
@@ -64,17 +64,9 @@ html, body {
 
 /* フリップコンテンツ */
 
-.content-container {
-  display: flex;
-  justify-content: center;
-}
-
-.content {
-  width: 300px;
-  text-align: center;
-}
-
 img {
-  width: 300px;
-  height: 400px;
+  width: 75vw;
+  height: 75vw;
+  margin-top: 5vh;
+  border: 1px solid #000;
 }
