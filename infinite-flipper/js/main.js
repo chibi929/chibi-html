@@ -1,7 +1,9 @@
+var currentIndex = 0;
 var rotateY = 0;
 var front = null;
 var back = null;
 var flipper = null;
+var flipProcessing = false;
 
 function onLoad() {
   front = document.getElementById('front');
@@ -9,18 +11,37 @@ function onLoad() {
   flipper = document.getElementById('flipper');
   flipper.addEventListener('transitionend', function() {
     if (rotateY % 360 !== 0) {
-      console.log("フロントのアニメーション終了");
-      front.children[2].innerHTML = `フロント(rotateY): ${rotateY}`;
+      _setData(front, _getNextData());
     } else {
-      console.log("バックのアニメーション終了");
-      back.children[2].innerHTML = `バック(rotateY): ${rotateY}`;
+      _setData(back, _getNextData());
     }
+    flipProcessing = false;
   });
+
+  _setData(front, _getNextData());
+  _setData(back, _getNextData());
 }
 
 function onFlipperClicked() {
+  if (flipProcessing) {
+    return;
+  }
+  flipProcessing = true;
+  
   rotateY += 180;
   flipper.style.transform = `rotateY(${rotateY}deg)`;
   flipper.style.webkitTransform = `rotateY(${rotateY}deg)`;
   flipper.style.mozTransform = `rotateY(${rotateY}deg)`;
+}
+
+function _setData(elem, obj) {
+  elem.children[0].style.src = obj.image;
+  elem.children[1].innerHTML = obj.title;
+  elem.children[2].description = obj.description;
+}
+
+function _getNextData() {
+  var index = currentIndex % data.length;
+  currentIndex++;
+  return data[index];
 }
