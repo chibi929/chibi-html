@@ -67,8 +67,8 @@ html, body {
 /* フリップコンテンツ */
 
 img {
-  width: 75vw;
-  height: 75vw;
-  margin-top: 5vh;
+  width: 75vmin;
+  height: 75vmin;
+  margin-top: 5vmax;
   border: 1px solid #000;
 }
