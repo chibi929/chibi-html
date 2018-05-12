@@ -62,12 +62,12 @@ var data = [
   {
     title: 'なし',
     description: 'Pear',
-    image: 'img/pear.png'
+    image: 'img/pear2.png'
   },
   {
     title: 'ようなし',
     description: 'Pear',
-    image: 'img/pear2.png'
+    image: 'img/pear.png'
   },
   {
     title: 'かき',
