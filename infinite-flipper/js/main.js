@@ -4,6 +4,7 @@ var front = null;
 var back = null;
 var flipper = null;
 var flipProcessing = false;
+var soundEffect = null;
 
 function onLoad() {
   data.shuffle();
@@ -21,6 +22,9 @@ function onLoad() {
 
   _setData(front, _getNextData());
   _setData(back, _getNextData());
+  soundEffect = new Audio();
+  soundEffect.src = 'sound/nyu2.mp3';
+  soundEffect.load();
 }
 
 function onFlipperClicked() {
@@ -34,6 +38,7 @@ function onFlipperClicked() {
   flipper.style.transform = `rotateY(${rotateY}deg)`;
   flipper.style.webkitTransform = `rotateY(${rotateY}deg)`;
   flipper.style.mozTransform = `rotateY(${rotateY}deg)`;
+  soundEffect.play();
 }
 
 function _setData(elem, obj) {

@@ -19,5 +19,7 @@
 
 ## クレジット表記
 
-- 以下の方々のイラストを使わせて頂きました。ありがとうございます。
+- 以下の方々の素材を使わせて頂きました。ありがとうございます。
     - [よねぼー](https://www.ac-illust.com/main/profile.php?id=jtdGQmIO&area=1)さん
+    - [効果音ラボ](https://soundeffect-lab.info/)さん
+    
