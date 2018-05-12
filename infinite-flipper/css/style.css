@@ -3,6 +3,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #fffacd;
 }
 
 #main-container {
@@ -40,6 +41,7 @@ html, body {
   height: 100%;
   border-radius: 4px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+  background-color: #fff;
 }
 
 .flip {
